@@ -50,6 +50,7 @@ FIELD: Mapping[str, Varf] = MappingProxyType({
     'rs3': Varf('z Momentum residue', '1'),
     'rsc': Varf('Continuity residue', '1'),
     'prim': Varf('Primordial layer', '1'),
+    'bs':Varf('Basalt','1')
 })
 
 FIELD_EXTRA: Mapping[str, Callable[[Step], Field]] = MappingProxyType({
@@ -72,6 +73,7 @@ FIELD_FILES: Mapping[str, List[str]] = MappingProxyType({
     'ed': ['edot'],
     'tcond': ['Tcond1', 'Tcond2', 'Tcond3'],
     'prm': ['prim'],
+    'bs':['bs']
 })
 
 FIELD_FILES_H5: Mapping[str, List[str]] = MappingProxyType({
@@ -98,6 +100,7 @@ FIELD_FILES_H5: Mapping[str, List[str]] = MappingProxyType({
     'PrincipalStressAxis': ['sx1', 'sx2', 'sx3'],
     'StrainRate': ['edot'],
     'Primordial': ['prim'],
+    'Basalt':['bs'],
 })
 
 SFIELD: Mapping[str, Varf] = MappingProxyType({
