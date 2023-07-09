@@ -45,7 +45,7 @@ CONF_DEF['plot'] = dict(
     ratio=Conf(None, True, None, {'nargs': '?', 'const': 0.6, 'type': float},
                False, 'force aspect ratio of field plot'),
     raster=switch_opt(True, None, 'rasterize field plots'),
-    format=Conf('pdf', True, None, {},
+    format=Conf('png', True, None, {},
                 True, 'figure format (pdf, eps, svg, png)'),
     vmin=Conf(None, True, None, {'type': float},
               False, 'minimal value on plot'),
